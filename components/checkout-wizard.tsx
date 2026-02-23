@@ -157,7 +157,7 @@ export function CheckoutWizard() {
                 {items.map((item) => (
                   <li key={`${item.product.id}-${item.size}-${item.color}`} className="flex items-center gap-3">
                     <div className="relative w-12 h-14 rounded-lg overflow-hidden bg-secondary flex-shrink-0">
-                      <Image src={item.product.image} alt={item.product.name} fill className="object-cover" />
+                      <Image src={item.product.image} alt={item.product.name} fill className="object-cover" {...(idx === 0 ? { priority: true } : {})} />
                     </div>
                     <div className="flex-1 min-w-0">
                       <p className="text-sm text-foreground truncate">{item.product.name}</p>
@@ -274,7 +274,7 @@ function ReviewStep({
         {items.map((item, idx) => (
           <div key={idx} className="flex items-center gap-4 p-4">
             <div className="relative w-16 h-20 rounded-lg overflow-hidden bg-secondary flex-shrink-0">
-              <Image src={item.product.image} alt={item.product.name} fill className="object-cover" />
+              <Image src={item.product.image} alt={item.product.name} fill className="object-cover" {...(idx === 0 ? { priority: true } : {})} />
             </div>
             <div className="flex-1">
               <p className="text-sm font-medium text-foreground">{item.product.name}</p>
