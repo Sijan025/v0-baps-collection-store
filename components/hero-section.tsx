@@ -12,7 +12,6 @@ export function HeroSection() {
         fill
         className="object-cover object-center"
         priority
-        quality={90}
       />
 
       {/* Gradient Overlay */}
