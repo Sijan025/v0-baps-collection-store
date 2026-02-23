@@ -47,6 +47,7 @@ export function ProductDetail({ product }: { product: Product }) {
                 fill
                 className="object-cover"
                 priority
+                loading="eager"
               />
             </div>
           </div>
