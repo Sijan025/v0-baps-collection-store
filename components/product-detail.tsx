@@ -30,9 +30,8 @@ export function ProductDetail({ product }: { product: Product }) {
                 <button
                   key={idx}
                   onClick={() => setSelectedImage(idx)}
-                  className={`relative w-16 h-20 rounded-lg overflow-hidden border-2 transition-colors ${
-                    selectedImage === idx ? "border-primary" : "border-transparent"
-                  }`}
+                  className={`relative w-16 h-20 rounded-lg overflow-hidden border-2 transition-colors ${selectedImage === idx ? "border-primary" : "border-transparent"
+                    }`}
                 >
                   <Image src={img} alt={`${product.name} view ${idx + 1}`} fill className="object-cover" />
                 </button>
@@ -69,11 +68,10 @@ export function ProductDetail({ product }: { product: Product }) {
                 {[...Array(5)].map((_, i) => (
                   <Star
                     key={i}
-                    className={`h-4 w-4 ${
-                      i < Math.floor(product.rating)
+                    className={`h-4 w-4 ${i < Math.floor(product.rating)
                         ? "fill-primary text-primary"
                         : "text-muted-foreground/30"
-                    }`}
+                      }`}
                   />
                 ))}
               </div>
@@ -100,11 +98,10 @@ export function ProductDetail({ product }: { product: Product }) {
                   <button
                     key={color.name}
                     onClick={() => setSelectedColor(color.name)}
-                    className={`h-8 w-8 rounded-full border-2 transition-all ${
-                      selectedColor === color.name
+                    className={`h-8 w-8 rounded-full border-2 transition-all ${selectedColor === color.name
                         ? "border-primary scale-110"
                         : "border-border hover:border-foreground/40"
-                    }`}
+                      }`}
                     style={{ backgroundColor: color.hex }}
                     aria-label={`Select ${color.name}`}
                   />
@@ -126,11 +123,10 @@ export function ProductDetail({ product }: { product: Product }) {
                   <button
                     key={size}
                     onClick={() => setSelectedSize(size)}
-                    className={`h-10 min-w-[48px] px-4 rounded-lg border text-sm font-medium transition-all ${
-                      selectedSize === size
+                    className={`h-10 min-w-[48px] px-4 rounded-lg border text-sm font-medium transition-all ${selectedSize === size
                         ? "bg-primary text-primary-foreground border-primary"
                         : "bg-transparent text-foreground border-border hover:border-foreground/40"
-                    }`}
+                      }`}
                   >
                     {size}
                   </button>
@@ -152,11 +148,10 @@ export function ProductDetail({ product }: { product: Product }) {
               </button>
               <button
                 onClick={() => setIsWishlisted(!isWishlisted)}
-                className={`h-12 w-12 rounded-lg border flex items-center justify-center transition-all ${
-                  isWishlisted
+                className={`h-12 w-12 rounded-lg border flex items-center justify-center transition-all ${isWishlisted
                     ? "bg-primary/10 border-primary text-primary"
                     : "border-border text-foreground/60 hover:border-foreground/40 hover:text-foreground"
-                }`}
+                  }`}
                 aria-label={isWishlisted ? "Remove from wishlist" : "Add to wishlist"}
               >
                 <Heart className={`h-5 w-5 ${isWishlisted ? "fill-primary" : ""}`} />
