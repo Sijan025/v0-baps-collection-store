@@ -1,4 +1,4 @@
-# BAPS COLLECTION
+# BAPPS COLLECTION
 
 Elevated essentials for the modern wardrobe. A premium men's fashion e-commerce storefront built with Next.js 16.
 
