@@ -100,7 +100,7 @@ export function LookbookFeed() {
                           <p className="text-sm font-medium text-foreground truncate group-hover/item:text-primary transition-colors">
                             {product.name}
                           </p>
-                          <p className="text-sm text-muted-foreground">${product.price}</p>
+                          <p className="text-sm text-muted-foreground">रू{product.price}</p>
                         </div>
                         <ArrowRight className="h-4 w-4 text-muted-foreground group-hover/item:text-primary transition-colors" />
                       </Link>
@@ -139,7 +139,7 @@ export function LookbookFeed() {
                     <X className="h-5 w-5" />
                   </button>
                 </div>
-                <p className="text-xl font-bold text-foreground mt-2">${activeProduct.price}</p>
+                <p className="text-xl font-bold text-foreground mt-2">रू{activeProduct.price}</p>
                 <p className="text-sm text-muted-foreground mt-2 leading-relaxed line-clamp-3">
                   {activeProduct.description}
                 </p>

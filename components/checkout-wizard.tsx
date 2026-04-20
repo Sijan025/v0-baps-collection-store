@@ -166,7 +166,7 @@ export function CheckoutWizard() {
                       </p>
                     </div>
                     <span className="text-sm font-medium text-foreground">
-                      ${(item.product.price * item.quantity).toLocaleString()}
+                      रू{(item.product.price * item.quantity).toLocaleString()}
                     </span>
                   </li>
                 ))}
@@ -174,16 +174,16 @@ export function CheckoutWizard() {
               <div className="border-t border-border pt-4 flex flex-col gap-2">
                 <div className="flex justify-between text-sm">
                   <span className="text-muted-foreground">Subtotal</span>
-                  <span className="text-foreground">${totalPrice.toLocaleString()}</span>
+                  <span className="text-foreground">रू{totalPrice.toLocaleString()}</span>
                 </div>
                 <div className="flex justify-between text-sm">
                   <span className="text-muted-foreground">Shipping</span>
-                  <span className="text-foreground">{totalPrice >= 300 ? "Free" : "$15"}</span>
+                  <span className="text-foreground">{totalPrice >= 300 ? "Free" : "रू15"}</span>
                 </div>
                 <div className="border-t border-border pt-3 mt-2 flex justify-between">
                   <span className="text-sm font-semibold text-foreground">Total</span>
                   <span className="text-lg font-bold text-foreground">
-                    ${(totalPrice + (totalPrice >= 300 ? 0 : 15)).toLocaleString()}
+                    रू{(totalPrice + (totalPrice >= 300 ? 0 : 15)).toLocaleString()}
                   </span>
                 </div>
               </div>
@@ -283,7 +283,7 @@ function ReviewStep({
               </p>
             </div>
             <span className="text-sm font-semibold text-foreground">
-              ${(item.product.price * item.quantity).toLocaleString()}
+              रू{(item.product.price * item.quantity).toLocaleString()}
             </span>
           </div>
         ))}

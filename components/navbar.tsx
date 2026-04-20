@@ -38,7 +38,7 @@ export function Navbar() {
         <div className="flex-shrink-0 w-1/3 text-center">
           <Link href="/" className="inline-block">
             <h1 className="text-lg lg:text-xl font-bold tracking-[0.3em] text-foreground uppercase">
-              Baps Collection
+              Bappss Store
             </h1>
           </Link>
         </div>

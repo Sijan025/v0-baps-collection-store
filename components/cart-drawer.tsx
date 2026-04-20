@@ -95,7 +95,7 @@ export function CartDrawer() {
                       </div>
                       <div className="flex items-center gap-3">
                         <span className="text-sm font-semibold text-foreground">
-                          ${(item.product.price * item.quantity).toLocaleString()}
+                          रू{(item.product.price * item.quantity).toLocaleString()}
                         </span>
                         <button
                           onClick={() => removeItem(item.product.id, item.size, item.color)}
@@ -118,7 +118,7 @@ export function CartDrawer() {
           <div className="border-t border-border px-6 py-5 flex flex-col gap-4">
             <div className="flex items-center justify-between">
               <span className="text-sm text-muted-foreground">Subtotal</span>
-              <span className="text-lg font-semibold text-foreground">${totalPrice.toLocaleString()}</span>
+              <span className="text-lg font-semibold text-foreground">रू{totalPrice.toLocaleString()}</span>
             </div>
             <p className="text-xs text-muted-foreground">Shipping and taxes calculated at checkout</p>
             <Link

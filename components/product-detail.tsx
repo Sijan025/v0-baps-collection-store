@@ -83,7 +83,7 @@ export function ProductDetail({ product }: { product: Product }) {
             </div>
 
             {/* Price */}
-            <p className="text-2xl font-bold text-foreground mt-6">${product.price}</p>
+            <p className="text-2xl font-bold text-foreground mt-6">रू{product.price}</p>
 
             {/* Description */}
             <p className="text-sm text-muted-foreground leading-relaxed mt-4">
@@ -167,7 +167,7 @@ export function ProductDetail({ product }: { product: Product }) {
             <div className="mt-8 flex flex-col gap-3">
               <div className="flex items-center gap-3 text-sm text-muted-foreground">
                 <Truck className="h-4 w-4 flex-shrink-0" />
-                <span>Complimentary shipping on orders over $300</span>
+                <span>Complimentary shipping on orders over रू300</span>
               </div>
               <div className="flex items-center gap-3 text-sm text-muted-foreground">
                 <RotateCcw className="h-4 w-4 flex-shrink-0" />

@@ -44,7 +44,7 @@ export function ProductCard({ product }: { product: Product }) {
           </h3>
         </Link>
         <div className="flex items-center justify-between mt-2">
-          <p className="text-sm font-semibold text-foreground">${product.price}</p>
+          <p className="text-sm font-semibold text-foreground">रू{product.price}</p>
           <div className="flex items-center gap-1">
             <div className="flex">
               {[...Array(5)].map((_, i) => (
