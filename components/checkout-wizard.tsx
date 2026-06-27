@@ -154,7 +154,7 @@ export function CheckoutWizard() {
             <div className="bg-card rounded-xl border border-border p-6">
               <h3 className="text-sm font-semibold text-foreground mb-4">Order Summary</h3>
               <ul className="flex flex-col gap-4 mb-6">
-                {items.map((item) => (
+                {items.map((item, idx) => (
                   <li key={`${item.product.id}-${item.size}-${item.color}`} className="flex items-center gap-3">
                     <div className="relative w-12 h-14 rounded-lg overflow-hidden bg-secondary flex-shrink-0">
                       <Image src={item.product.image} alt={item.product.name} fill className="object-cover" {...(idx === 0 ? { priority: true } : {})} />
